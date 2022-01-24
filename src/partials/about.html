@@ -1,0 +1,54 @@
+<section class="section-about" id="about" >
+    <div class=" container-about">
+        <p class="section-about__prehederText animate__animated animate__fadeInUp">tradition and love</p>
+        <h2 class="section-about__hederText animate__animated animate__fadeInUp">how it's made?</h2>
+        <div class="wrapper">
+            <picture >
+                <source srcset="
+                    ./images/about/how-its-made-cow-desk-1x.png 1x,
+                    ./images/about/how-its-made-cow-desk-2x.png 2x" media="(min-width: 1200px)">
+                <source srcset="
+                    ./images/about/how-its-made-cow-tab-1x.png 1x,
+                    ./images/about/how-its-made-cow-desk-2x.png 2x" media="(min-width: 768px)">
+                <source srcset="
+                    ./images/about/how-its-made-cow-mob-1x.png 1x,
+                    ./images/about/how-its-made-cow-mob-2x.png 2x" media="(min-width: 320px)">
+                <img src="./images/about/how-its-made-cow-mob-1x.png" alt="Cow" class="section-about__image">
+            </picture>   
+            <div class="wrapper-text">
+                <p class="section-about__afterhederText animate__animated animate__fadeInRight">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+                Maecenas eleifend erat at justo fringilla.</p>             
+                <p class="section-about__afterhederText2 animate__animated animate__fadeInRight">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                </p>
+                <p class="section-about__afterhederText2 section-about__afterhederText3 animate__animated animate__fadeInRight">Aliquam erat volutpat. Aenean accumsan.</p>
+                <button type="button" aria-label="Read more" class="section-about__btn animate__animated animate__bounceInRight" data-modal-open>
+                    Read more
+                    <svg width="10" height="10"  class="section-about__btn-svg">
+                        <use href="./images/symbol-defs.svg#Vector"></use>                   
+                    </svg>
+                </button>
+            </div> 
+        </div>   
+    </div>
+    <div class="backdrop-above is-hidden" data-backdrop>
+        <div class="modal-above ">
+            <h4 class="modal-above__heder">About</h4>
+            <video  class="modal-above__video"
+                poster="https://bm.img.com.ua/food/orig/c/c9/0ecfe9da9624133bcfa4c4f5d2136c9c.jpg" width="280"
+                controls preload="auto">
+                <source src="http://techslides.com/demos/sample-videos/small.webm" type="video/webm" />
+                <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
+                <source src="http://techslides.com/demos/sample-videos/small.ogv" type="video/ogg" />
+                Your browser does not support the <code>video</code> element.
+            </video>
+            <p class="modal-above__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ea quas, hic cumque reiciendis unde vero pariatur adipisci ullam maiores nesciunt quia aliquid optio dicta esse dolorem consequatur. Dignissimos, atque?</p>
+            <p class="modal-above__text modal-above__text--color">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, voluptatem aperiam? Quidem quo veniam inventore blanditiis hic enim dignissimos provident debitis. Nobis fugit eius perspiciatis distinctio, ad asperiores similique vero.</p>
+            <button type="button" class="modal-above__btn " aria-label="close info" data-modal-close>
+                <svg class="modal-above__btn-icon" width="20" height="20">
+                    <use href="/images/symbol-defs.svg#closemodal"></use>
+                </svg>
+            </button>
+        </div>
+    </div>   
+</section>

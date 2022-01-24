@@ -1,0 +1,369 @@
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 98px;
+  padding-top: 121px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+  }
+}
+
+.products__list {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.products__item {
+    position: relative;
+    display: block;
+    min-width: 280px;
+    min-height: 485px;
+    border-radius: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 161px;
+    & + & {
+        margin-top: 130px;
+    }
+
+    @media screen and (min-width: 768px) {
+        min-width: 220px;
+        padding-top: 152px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        & + & {
+            margin-left: 20px;
+            margin-top: 0;
+        }
+    }
+
+  @media screen and (min-width: 1280px) {
+    & + & {
+      margin-left: 30px;
+      margin-top: 0;
+    }
+  }
+}
+
+
+.first-box {
+  position: relative;
+  background: #ffb8ca;
+
+  @media screen and (min-width: 1280px) {
+    min-width: 329px;
+    min-height: 525px;
+    padding-left: 64.5px;
+    padding-right: 64.5px;
+    padding-top: 163px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    width: 249px;
+    height: 252px;
+    background-image: url('../images/products/ice1-480.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -113px;
+    left: 16px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/ice1-480-2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      height: 233px;
+      left: 0px;
+      top: -107px;
+      background-image: url('../images/products/ice1-768.png');
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/products/ice1-768-2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 329px;
+      height: 335px;
+      left: 0px;
+      top: -207px;
+      background-image: url('../images/products/ice1-1280.png');
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/products/ice1-1280-2x.png');
+      }
+    }
+  }
+}
+
+.second-box {
+  position: relative;
+  background: #f0d1a5;
+
+  @media screen and (min-width: 1280px) {
+    min-width: 329px;
+    min-height: 525px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 163px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 249px;
+    height: 252px;
+    background-image: url('../images/products/ice2-480.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -113px;
+    left: 16px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/ice2-480-2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      height: 233px;
+      left: 0px;
+      // top: -107px;
+      background-image: url('../images/products/ice2-768.png');
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/products/ice2-768-2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 329px;
+      height: 335px;
+      top: -207px;
+      background-image: url('../images/products/ice2-1280.png');
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/products/ice2-1280-2x.png');
+      }
+    }
+  }
+}
+
+.third-box {
+  position: relative;
+  background: #c2e297;
+
+  @media screen and (min-width: 1280px) {
+    min-width: 329px;
+    min-height: 525px;
+    padding-left: 63.7px;
+    padding-right: 63.7px;
+    padding-top: 163px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 249px;
+    height: 252px;
+    background-image: url('../images/products/ice3-480.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -113px;
+    left: 16px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/products/ice3-480-2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      height: 233px;
+      left: 0px;
+      top: -106px;
+      background-image: url('../images/products/ice3-768.png');
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/products/ice3-768-2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 329px;
+      height: 335px;
+      top: -207px;
+      background-image: url('../images/products/ice3-1280.png');
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/products/ice3-1280-2x.png');
+      }
+    }
+  }
+}
+
+.products__label {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+.products__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 144px;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 259px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.products__name {
+    position: relative;
+    display: block;
+    margin-bottom: 66px;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.02em;
+        margin-bottom: 70px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 53px;
+        left: 86px;
+        width: 26px;
+        height: 6px;
+        background-image: url("../images/products/dots.png");
+        background-size: 100%;
+        background-color: inherit;
+        background-repeat: no-repeat;
+
+        @media screen and (min-width: 1280px) {
+        top: 66px;
+    }
+    }
+}
+
+.products__slider {
+  width: 200px;
+  height: 124px;
+  overflow: hidden;
+
+  // @media screen and (min-width: 768px) {
+  //     width: 198px;
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //     width: 241px;
+  //     height: 106px;
+  // }
+}
+
+.slider-line {
+  position: relative;
+  display: flex;
+  width: 400px;
+  height: 124px;
+  left: 0;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__text {
+  width: 100%;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  // @media screen and (min-width: 768px) {
+  //     line-height: 176%;
+  //     text-align: center;
+  // }
+
+  // @media screen and (min-width: 1280px) {
+  //     font-size: 16px;
+  //     line-height: 176%;
+  // }
+}
+
+.products__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding-left: 5px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #ffffff;
+  fill: #d41443;
+  width: 40px;
+  height: 40px;
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+    fill: #ffffff;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 44px;
+  }
+}
+
+.products__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
