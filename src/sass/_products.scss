@@ -19,29 +19,29 @@
 }
 
 .products__item {
-    position: relative;
-    display: block;
-    min-width: 280px;
-    min-height: 485px;
-    border-radius: 24px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 161px;
+  position: relative;
+  display: block;
+  min-width: 280px;
+  min-height: 485px;
+  border-radius: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 161px;
+  & + & {
+    margin-top: 130px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 220px;
+    padding-top: 152px;
+    padding-left: 10px;
+    padding-right: 10px;
+
     & + & {
-        margin-top: 130px;
+      margin-left: 20px;
+      margin-top: 0;
     }
-
-    @media screen and (min-width: 768px) {
-        min-width: 220px;
-        padding-top: 152px;
-        padding-left: 10px;
-        padding-right: 10px;
-
-        & + & {
-            margin-left: 20px;
-            margin-top: 0;
-        }
-    }
+  }
 
   @media screen and (min-width: 1280px) {
     & + & {
@@ -50,7 +50,6 @@
     }
   }
 }
-
 
 .first-box {
   position: relative;
@@ -222,7 +221,7 @@
   line-height: 1.16;
   text-align: center;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $main-color;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -240,7 +239,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $main-header-color;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -255,42 +254,42 @@
 }
 
 .products__name {
-    position: relative;
-    display: block;
-    margin-bottom: 66px;
-    font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
+  position: relative;
+  display: block;
+  margin-bottom: 66px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.02em;
+    margin-bottom: 70px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 53px;
+    left: 86px;
+    width: 26px;
+    height: 6px;
+    background-image: url('../images/products/dots.png');
+    background-size: 100%;
+    background-color: inherit;
+    background-repeat: no-repeat;
 
     @media screen and (min-width: 1280px) {
-        font-size: 30px;
-        line-height: 1.13;
-        letter-spacing: 0.02em;
-        margin-bottom: 70px;
+      top: 66px;
     }
-
-    &::after {
-        position: absolute;
-        content: "";
-        top: 53px;
-        left: 86px;
-        width: 26px;
-        height: 6px;
-        background-image: url("../images/products/dots.png");
-        background-size: 100%;
-        background-color: inherit;
-        background-repeat: no-repeat;
-
-        @media screen and (min-width: 1280px) {
-        top: 66px;
-    }
-    }
+  }
 }
 
 .products__slider {
@@ -348,12 +347,12 @@
   border-radius: 50%;
   border-color: transparent;
   background-color: #ffffff;
-  fill: #d41443;
+  fill: $main-header-color;
   width: 40px;
   height: 40px;
   &:hover,
   &:focus {
-    background-color: #d41443;
+    background-color: $main-header-color;
     fill: #ffffff;
   }
 

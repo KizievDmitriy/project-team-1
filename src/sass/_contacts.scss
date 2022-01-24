@@ -78,12 +78,13 @@
 }
 
 .contacts__title {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.04em;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 500, 1.16, 0.04em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 186%;
+  // letter-spacing: 0.04em;
   color: #ffffff;
   width: 73px;
   background: #f0d1a5;
@@ -98,13 +99,14 @@
 }
 
 .contacts__pre-title {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.04em;
-  color: #000000;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 500, 1.16, 0.04em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 186%;
+  // letter-spacing: 0.04em;
+  color: $black-color;
   margin-top: 32px;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
@@ -115,13 +117,14 @@
 }
 
 .contacts__text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 183%;
-  letter-spacing: 0.04em;
-  color: #907e82;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 500, 1.16, 0.04em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 183%;
+  // letter-spacing: 0.04em;
+  color: $secondary-text-color;
   &::after {
     content: '';
     display: block;
@@ -154,13 +157,14 @@
 }
 
 .working-days__title {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.04em;
-  color: #000000;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 500, 1.16, 0.04em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 186%;
+  // letter-spacing: 0.04em;
+  color: $black-color;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
   }
@@ -170,12 +174,13 @@
 }
 
 .working-days__pre-title {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  color: #ffa5ba;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 500, 1.16, 0.04em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 186%;
+  color: $main-color;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
   }
@@ -189,12 +194,13 @@
 }
 
 .contacts__tel {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 183%;
-  color: #907e82;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 500, 1.16, 0.04em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 183%;
+  color: $secondary-text-color;
   text-decoration: none;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
@@ -205,12 +211,13 @@
 }
 
 .contacts__mail {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 183%;
-  color: #907e82;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 500, 1.16, 0.04em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 183%;
+  color: $secondary-text-color;
   text-decoration: none;
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
@@ -237,26 +244,30 @@
 }
 
 .button__item {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 700, 1.31, 0.04em);
+  // font-weight: bold;
+  // font-size: 16px;
+  // line-height: 21px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   text-align: center;
 }
 
 .button-red {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 700, 1.31, 0.04em);
+  // font-weight: bold;
+  // font-size: 16px;
+  // line-height: 21px;
   color: #ffffff;
   width: 198px;
   height: 44px;
   background: #d41342;
+  box-shadow: $box-shadow;
   border-radius: 22px;
   display: flex;
   justify-content: center;
@@ -269,12 +280,14 @@
 }
 
 .button {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+  font-family: DM Sans, sans-serif;
+  // font-style: normal;
+  @include font(16px, 700, 1.31, 0.04em);
+  // font-weight: bold;
+  // font-size: 16px;
+  // line-height: 21px;
   color: #d41342;
+  box-shadow: $box-shadow;
   width: 198px;
   height: 44px;
   background: #ffffff;
@@ -317,7 +330,7 @@
   background: #f9f9f9;
   border-radius: 3px;
   position: relative;
-  box-shadow: 0 5px 15px black;
+  box-shadow: $box-shadow;
   @media screen and(min-width: 320px) {
     display: flex;
     padding: 20px;

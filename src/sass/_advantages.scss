@@ -54,13 +54,14 @@
 .advantages__item-title {
   font-family: Titan One;
   font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 1.13;
+  @include font(36px, 400, 1.13, 0.04em);
+  // font-weight: normal;
+  // font-size: 36px;
+  // line-height: 1.13;
   text-align: left;
-  letter-spacing: 0.04em;
+  // letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $main-header-color;
   margin-bottom: 34px;
   position: relative;
   margin-top: 104px;
@@ -114,11 +115,12 @@
 .advantages__text {
   font-family: DM Sans;
   font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 1.7;
-  letter-spacing: 0.02em;
-  color: #000000;
+  @include font(12px, 700, 1.7, 0.02em);
+  // font-weight: bold;
+  // font-size: 12px;
+  // line-height: 1.7;
+  // letter-spacing: 0.02em;
+  color: $black-color;
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.74;
